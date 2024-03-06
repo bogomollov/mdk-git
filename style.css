@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "TTFirsNeueMedium";
+    src: url("/fonts/TTFirsNeueMedium.woff") format("woff"),
+    url("/fonts/TTFirsNeueMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+:root {
+    --white: white;
+    --black: black;
+    --gray: #6F767E;
+    --gray-line: #D9D9D9;
+    --blue: #3E8BF3;
+    --blue-background: #F5F9FE;
+    --light-violet: #DFD3F7;
+    --light-blue: #C0E1EE;
+    --light-green: #D0E5C2;
+    --h1: 4em;
+    --h2: 48px;
+    --text24: 24px;
+    --text20: 20px;
+    --text18: 18px;
+    --text16: 16px;
+    --text12: 12px;
+    --line-h1: 72px;
+    --line-h2: 56px;
+    --line-24-20-18: 32px;
+    --line-16: 24px;
+}
+body {
+    font-family: "TTFirsNeueMedium", sans-serif;
+    color: var(--white);
+}
+body, html {
+    width: 100%;
+}
+h1 {
+    font-size: var(--h1);
+}
+h2 {
+    font-size: var(--h2);
+}
+header {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 88px;
+}
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vertical_line {
+    height: 48px;
+    width: 1px;
+    background-color: var(--gray-line);
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+}
+.select_language {
+    display: flex;
+}
