@@ -21,21 +21,23 @@
     --text20: 20px;
     --text18: 18px;
     --text16: 16px;
-    --text12: 12px;
+    --text14: 14px;
     --line-h1: 72px;
     --line-h2: 56px;
-    --line-24-20-18: 32px;
-    --line-16: 24px;
+    --line-32: 32px;
+    --line-24: 24px;
+    --line-16: 16px;
 }
-body {
+body, button {
     font-family: "TTFirsNeueMedium", sans-serif;
-    color: var(--white);
 }
 body, html {
     width: 100%;
+    background-color: var(--white);
 }
 h1 {
     font-size: var(--h1);
+    line-height: var(--line-h1);
 }
 h2 {
     font-size: var(--h2);
@@ -53,18 +55,136 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.info_menu {
+    display: flex;
+    align-items: center;
+}
 .vertical_line {
     height: 48px;
     width: 1px;
     background-color: var(--gray-line);
+    margin: 0px 24px;
 }
-.menu {
-    display: flex;
-    align-items: center;
+.menu_items {
+    width: 552px;
 }
 ul {
     display: flex;
+    justify-content: space-between;
+}
+li a{
+    font-size: var(--text16);
+    color: var(--gray);
 }
 .select_language {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+.language_block {
+    display: flex;
+    width: 108px;
+    color: var(--black);
+    justify-content: space-between;
+    margin-right: 24px;
+}
+.btn_launch {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-style: none;
+    color: var(--white);
+    font-size: var(--text16);
+    line-height: var(--line-24);
+    background-color: var(--blue);
+}
+.banner_body {
+    background-color: var(--blue-background);
+    height: 865px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.banner_wrapper, .about_wrapper {
+    display: grid;
+    width: 1275px;
+    margin: 0 auto;
+}
+.banner_title {
+    width: 550px;
+}
+.banner_title button {
+    padding: 16px 24px;
+    line-height: var(--line-32);
+    font-size: var(--text20);
+    margin: 32px 0px;
+}
+.banner_text {
+    display: flex;
+    align-items: center;
+    width: 273px;
+    justify-content: space-between;
+    color: var(--gray);
+}
+.banner_small {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+}
+.social span {
+    margin-right: 24px;
+}
+.scroll,.social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: var(--text14);
+    line-height: var(--line-16);
+}
+.scroll_icon, .facebook, .twitter, .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.instagram {
+    margin-right: 0px;
+}
+.facebook, .twitter, .instagram {
+    width: 40px;
+    height: 40px;
+}
+.about_wrapper {
+    justify-content: space-evenly;
+    height: 432px;
+    margin-bottom: 120px;
+    border-bottom: 1px solid var(--gray-line);
+}
+.about_title {
+    width: 517px;
+    line-height: var(--line-h2);
+}
+.about_desc {
+    color: var(--gray);
+    line-height: var(--line-32);
+}
+@media screen and (min-width: 768px) {
+    .grid-gap--small {
+        gap: 50px;
+    }
+    .grid--centered {
+        align-items: center;
+    }
+    .grid--1x2 {
+        grid-template-columns: 1fr 1fr;
+    }
 }
