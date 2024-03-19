@@ -54,6 +54,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1275px;
+    margin: 0 auto;
 }
 .info_menu {
     display: flex;
@@ -129,7 +131,7 @@ li a{
 .banner_small {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 1330px;
     margin: 0 auto;
 }
 .social span {
